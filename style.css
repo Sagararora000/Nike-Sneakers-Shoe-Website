@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+.nav-bar {
+  background-color: black;
+
+  padding: 20px 50px;
+}
+
+.navItem {
+  color: white;
+}
+.navItem input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.navItem input::placeholder {
+  color: white;
+}
+
+.nav-search {
+  display: flex;
+  background-color: #808080;
+  width: 226px;
+  height: 40px;
+  border-radius: 8px;
+}
+.nav-offer-text {
+  border-bottom: 2px solid green;
+  font-size: 20px;
+}
+.navMenuItem {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.slider {
+  background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 83%, 0 0);
+  overflow: hidden;
+}
+
+.sliderWrapper {
+  transition: all 1.5s ease-in-out;
+
+  width: 500vw;
+}
+.sliderItem {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100vw;
+  position: relative;
+}
+.sliderItem img {
+  z-index: 1;
+}
+.bgCircle {
+  width: 750px;
+  height: 750px;
+  /* background-color: green; */
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+.sliderItem:nth-child(1) .bgCircle {
+  background-color: #369e62;
+}
+.sliderItem:nth-child(2) .bgCircle {
+  background-color: rebeccapurple;
+}
+.sliderItem:nth-child(3) .bgCircle {
+  background-color: teal;
+}
+.sliderItem:nth-child(4) .bgCircle {
+  background-color: cornflowerblue;
+}
+.sliderItem:nth-child(5) .bgCircle {
+  background-color: rgb(124, 115, 80);
+}
+.ShoeName {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  z-index: 1;
+}
+.buyBtn {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+  background-color: black;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  /* top: 150px;
+    right: 130px; */
+}
+.bwBtnHover:hover {
+  color: black;
+  background-color: white;
+}
+.shoePrice {
+  /* color: green;   Color changeable */
+  font-size: 60px;
+  font-weight: 300;
+  border: 1px solid white;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  /* right: 80%; */
+  
+}
+.sliderItem:nth-child(1) .shoePrice {
+  color: #369e62;
+}
+.sliderItem:nth-child(2) .shoePrice {
+  color: white;
+}
+.sliderItem:nth-child(3) .shoePrice {
+  color: teal;
+}
+.sliderItem:nth-child(4) .shoePrice {
+  color: cornflowerblue;
+}
+.sliderItem:nth-child(5) .shoePrice {
+  color: rgb(124, 115, 80);
+}
+
+.features {
+  padding: 50px;
+}
+.featureImg {
+  width: 50px;
+  height: 50px;
+}
+.featureContent {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  align-items: center;
+  text-align: center;
+}
+.headingFeature {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
+}
+.featureText {
+  width: 50%;
+  color: grey;
+}
+.product {
+  background-color: #f5f5f5;
+  clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+  position: relative;
+}
+.prodImg {
+  width: 50%; /*due to width 50% the details are coming side by side*/
+}
+.productDetails {
+  width: 40%;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+.prodHeading {
+  font-size: 75px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.prodDesc {
+  color: grey;
+  /* width: 60%; */
+}
+.color {
+  height: 32px;
+  width: 32px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.color:last-child {
+  background-color: #00008b;
+}
+.size {
+  padding: 5px 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.buyBtn2 {
+  margin: 10px 50px;
+  padding: 10px 20px;
+  float: right;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.payment{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display:none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.75);
+}
+
+.paymentImg{
+  width: 40px;
+  margin-right: 5px;
+}
+.paymentBorder{
+  border: none;
+  border-bottom:1px solid black ;
+  padding: 10px;
+  margin: 10px 0px
+}
+.sm{
+  width: 30%;
+}
+.paymentButton{
+  background-color: green;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.75);
+}
+.closeBtn{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  right: 2%;
+  cursor: pointer;
+}
+.gallery {
+  display: flex;
+  padding: 50px;
+}
+.galleryItem {
+  padding: 50px;
+  flex: 1;
+}
+.galleryImg {
+  width: 100%;
+  height: 500px;
+}
+
+.newSeason{
+  display: flex;
+}
+.nsItem {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+.nsImg {
+  width: 100%;
+}
+.nsTitle {
+  color: white;
+  font-size: 40px;
+}
+.nsBtn{
+    padding: 15px ;
+    font-weight: 600;
+}
+
+.footer{
+  display: flex;
+}
+.footerDetails{
+  padding: 0;
+}
+.footerDetails li{
+  font-weight: 700;
+  font-size: 16px;
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+.footerDetails a{
+  text-decoration: none;
+  color:#808080;
+  display: block;
+  margin-bottom: 15px;
+  
+}
+.footer-left{
+  flex: 2;
+  justify-content: space-between;
+  padding: 50px;
+}
+.footer-right{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-input-NL{
+  padding: 5px  ;
+}
+.footer-join-NL-btn{
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+.footer-para-style{
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer-Social-Media-Img{
+  display: flex;
+
+}
+.footer-Social-Media-Img img{
+  width: 20px;
+  padding: 5px;
+}
+.copyright{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media screen and (max-width:480px) {
+.nav-bar{
+    padding:20px;
+  }
+  .nav-search{
+    display: none;
+  }
+  .nav-2{
+    /* margin: 20px; */
+    flex-wrap: wrap;
+  }
+  .navMenuItem{
+    /* font-weight: 700; */
+    margin:20px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .slider{
+    clip-path: none;
+  }
+   .sliderItem {
+    width: 100%;
+   }
+   .sliderItem img{
+    width: 100%;
+   }
+   .bgCircle{
+    width: 100%;
+    height:100%;
+   }
+   .ShoeName{
+    display: none;
+   }
+   .buyBtn{
+      top: 0;
+      right: 0;
+   }
+   .shoePrice{
+    top: unset; /*top value changed from 20% to completely removing its existance*/
+    left: 0;   /*left value changed from 10% to 0*/
+    bottom: 1; /*newly added property*/
+    background-color: lightgray;
+   }
+   .features{
+    flex-direction: column;
+   }
+   .featureContent{
+    padding-bottom: 40px;
+   }
+   .product{
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    
+   }
+   .prodImg{
+    width: 80%;
+   }
+   .productDetails{
+    width: 80%;
+    position:unset;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   }
+   .prodHeading{
+    font-size: 50px;
+    text-transform: unset;
+    width: 100%;
+    
+   }
+   .payment{
+    width: 80%;
+    padding: 20px;
+   }
+
+   .gallery{
+    display: none;
+   }
+   .newSeason{
+    display: flex;
+    flex-direction: column;
+   }
+   .nsItem:nth-child(2){
+    padding: 50px;
+   }
+   
+   .footer{
+    flex-direction: column;
+    align-items: center;
+   }
+   .footer-left{
+    padding: 20px;
+    width: 90%;
+   }
+   .footer-right{
+  
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 91%;
+   }
+
+
+  }
