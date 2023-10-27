@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "sagar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagararora000/Nike-Sneakers-Shoe-Website.git"
+  },
+  "author": "SagarArora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sagararora000/Nike-Sneakers-Shoe-Website/issues"
+  },
+  "homepage": "https://github.com/Sagararora000/Nike-Sneakers-Shoe-Website#readme",
+  "description": ""
+}
