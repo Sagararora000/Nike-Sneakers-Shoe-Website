@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/utils.css">
@@ -242,8 +242,11 @@
         <div class="footer-right">
             <div class="footer-right-menu">
                 <p class="footer-para-style">Subscribe to our newsletter</p>
-                <input type="text" placeholder="your@gmail.com" class="footer-input-NL">
-                <input type="button" value="Join!" class="footer-join-NL-btn">
+                <form action="/subscribe" method="post">
+                    <input type="text" name="email" placeholder="your@gmail.com" class="footer-input-NL">
+                    <input type="submit" value="Join!" class="footer-join-NL-btn">
+                </form>
+
             </div>
             <div class="footer-right-menu">
                 <p class="footer-para-style">Follow Us</p>
